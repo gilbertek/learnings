@@ -42,7 +42,7 @@ class ExecutionResultRepository {
         return $!db;
     }
 
-    constant $table = 'job_execustion';
+    constant $table = 'job_execution';
     method !create-schema() {
         $!db.do(qq:to/SCHEMA/);
             CREATE TABLE IF NOT EXISTS $table (
